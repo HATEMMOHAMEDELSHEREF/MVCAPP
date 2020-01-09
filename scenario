@@ -1,0 +1,148 @@
+run page is index.php
+all files is required here
+/*
+//echo $_SERVER['REQUEST_URI'];
+//echo 'Hello Mvc';
+define('DS',DIRECTORY_SEPARATOR,true);
+define('PS',PATH_SEPARATOR,false);
+define('l','<br>');
+echo DS;
+echo '</br>';
+echo PS;
+$name='HATEM MOHAMED ELSHEREF';
+//echo crypt($name,'cd');
+echo substr_replace($name,'shefoo',0,5);
+echo l;
+$str='mosalahmoosalahmooooosalmoosalah';
+echo substr_count($str,'mooo',0).l;
+echo strtr("Hilla Warld","iad","8o1");
+echo substr_compare('hatemohamedelsheref','mphamed',4,7,true);
+$string = "Hello world. Beautiful day today.";
+ $token = strtok($string, " ");
+ 
+while ($token !== false)
+   {
+   echo "$token<br>";
+$token=strtok(" ");
+}
+echo l;
+echo strrev($name);
+
+
+echo  l, $name ,$name , $name;
+$n=sprintf('my name is %s','hatem');
+echo $n,l;
+echo str_word_count($name);*/
+// reviion to array
+/*
+$data0=array(10,20,30,40,50,60,70,80,90,100);
+$data1=array(110,120,130,140,150,160,170,180,190,200);
+$data2=array('f1'=>1,'f2'=>2,'f3'=>3,'f4'=>4,'f5'=>5,'f6'=>6,'f7'=>7,'f8'=>8,'f9'=>9,'f10'=>10);
+$data3=array(
+    array(11,12,13,14,15,16,17,18,19,20),
+    array('hatem','mohamed','ibrahim','elsheref'),
+    array('address'=>'egypt,tanta,kotour','phone'=>'01090703457','email'=>'hatemelsheref99@gmail.com')
+);
+
+$counter=count($data3);
+for($i=0;$i<$counter;$i++){
+    foreach($data3[$i] as $k => $v){
+        echo $k.' => '.$v.'<br>';
+    }
+}
+echo '<pre>';
+print_r($data1);
+echo '</pre>';
+
+echo '<pre>';
+print_r($data2);
+echo '</pre>';
+
+echo '<pre>';
+print_r($data3);
+echo '</pre>';
+
+
+$to='hatemelsheref99@gmail.com';
+$subject='test mail function';
+$message='hello world';
+
+mail($to,$subject,$message);
+
+
+$da=file('DATA.TXT');
+foreach ($da as $value){
+echo $value.'<br>';
+}
+
+*/
+
+
+/*
+if($_SERVER['REQUEST_METHOD']=="POST"){
+
+    define('hostname','localhost');
+    define('dbuser','webserver');
+    define('dbpass','');
+    define('dbname','mvcapp');
+    $con=mysqli_connect(hostname,dbuser,dbpass,dbname);
+       
+    echo $_POST['username'];
+       $image=$_FILES['file'];
+       $name=$image['name'];
+       $src=$image['tmp_name'];
+       $size=$image['size'];
+       $error=$image['error'];
+       $type=$image['type'];
+       $destination="up/";
+       $newname=uniqid('user',false);
+       $extension=explode('.',$name);
+       $extension=end($extension);
+       $destination.=$newname.'.'.$extension;
+      if(move_uploaded_file($src,$destination)){
+          echo 'uploaded successfully';
+      }
+}
+$email="hatemelsheref99@gmail.com";
+$validemail="/^([\w\d]+)@([\w\d]+\.[\d\w]+)$/";
+if(preg_match($validemail,$email)){
+    //echo "valid email address";
+}else{
+  //  echo "invalid email address";
+}
+$validphonenumbereg="/^01[012]?([\d]{8,9})$/";
+$phone010="01090703457";
+$phone011="0119036551587";
+$phone012="01226655988";
+if(preg_match($validphonenumbereg,$phone012)){
+    //echo 'valid phone number to vodafone itesalat orange eg';
+}else{
+   // echo "invalid egyption phone number";
+}
+$validurl=
+$cleanurl="/^(((https|http|ftp)+(:\/\/)www)+|(www)+)\.[\d\w]+\.[\d\w]+(\/[\d\w_]+)*(\.[\w]+)?([?\w\d=&@#\.\/])*$/";
+ if(preg_match($validurl,'https://www.w3schools.com/php/php_form_url_email.asp?page=1&action=add')){
+     echo 'valid url ';
+ }else{
+     echo 'invalid url';
+ }
+
+$date="1999-05-01";
+echo '<br>'.$date.'<br>';
+$validdate="/^(\d{4})-((0[123456789])|(1[012]))-((0[123456789])|(1\d)|(2\d)|(3[01]))$/";
+if(preg_match($validdate,$date)){
+    echo preg_replace($validdate,'$3/$2/$1',$date);
+    echo "valid";
+}else{
+    echo "invalid";
+}
+$a=1;
+$b=1;
+$c=$a+$b++;
+echo $c;
+echo $c;
+
+
+
+*/
+//echo $_REQUEST['url'];

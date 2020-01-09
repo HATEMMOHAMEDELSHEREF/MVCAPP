@@ -1,0 +1,3 @@
+
+<h1>CONTROLLER IS INDEX</h1>
+<h1>VIEW IS EDIT</h1>
